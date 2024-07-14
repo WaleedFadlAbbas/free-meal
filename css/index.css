@@ -1,0 +1,80 @@
+/* side nav styling */
+body {
+    overflow: hidden;
+}
+
+.side-nav {
+    left: -15%;
+    position: fixed;
+    z-index: 999;
+    width: 20%;
+
+    .bg-black {
+        width: 75%;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+
+    .bg-white {
+        width: 25%;
+
+        #openClose {
+            cursor: pointer;
+        }
+    }
+}
+
+/* styling displayed meals index page */
+.row .content {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.row .content img {
+    cursor: pointer;
+}
+
+.row .content .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.653);
+    transition-duration: 0.5s;
+    top: 100%
+}
+
+.content:hover .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.653);
+    top: 0%;
+    transition-duration: 0.5s;
+}
+
+/* styling meal details  */
+.row .content.mealdetails {
+    cursor: default;
+}
+
+.ingcustom:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.areacust:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.ingcustom:hover i {
+    rotate: 360deg;
+    transition-duration: 0.5s;
+}
+
+.areacust:hover i {
+    rotate: 360deg;
+    transition-duration: 0.5s;
+}
